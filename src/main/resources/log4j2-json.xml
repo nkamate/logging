@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration strict="true" status="WARN">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <JSONLayout complete="true" properties="true"/>
+        </Console>
+
+    </Appenders>
+    <Loggers>
+        <Root level="ALL">
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+</Configuration>

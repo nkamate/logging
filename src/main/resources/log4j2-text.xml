@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration strict="true" status="WARN">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+
+            <PatternLayout
+                    pattern="%d{dd-MM-yyyy HH:mm:ss,SSS} [%t] %-5level %logger{36} - %msg - CONTEXT: %X{beginTime,endTime,device.ip,device.name,device.version}%n"/>
+        </Console>
+
+    </Appenders>
+    <Loggers>
+        <Root level="ALL">
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+</Configuration>
